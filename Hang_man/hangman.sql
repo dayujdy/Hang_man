@@ -1,0 +1,25 @@
+DROP DATABASE IF EXISTS Hangman;
+
+CREATE DATABASE Hangman;
+Use Hangman;
+
+CREATE TABLE Users(
+
+	userID INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    userName VARCHAR(50) NOT NULL,
+    password_ VARCHAR(500) NOT NULL,
+	wins INT(11) NOT NULL,
+    losses INT(11) NOT NULL
+);
+
+CREATE TABLE Game (
+
+	gameID INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    gameName VARCHAR(2000) NOT NULL,
+    currUserCount INT(11) NOT NULL,
+    maxUserCount INT(11) NOT NULL,
+    secretWord VARCHAR(2000) NOT NULL,
+    currWord VARCHAR(2000) NOT NULL,
+    numofchance INT(11) NOT NULL 
+    
+);
