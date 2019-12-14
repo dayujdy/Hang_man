@@ -1,3 +1,5 @@
+Introduction: Welcome to the classical game Hangman! A highlight of this program is that it allows multiple players to compete at the same time using multithreading.
+
 Configuration file name: config.txt
 How to run my code:
 1. Run the "hanman.sql" to create data base.
